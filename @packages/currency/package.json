@@ -1,0 +1,38 @@
+{
+  "name": "@dumlj/currency",
+  "version": "0.0.1",
+  "description": "货币转换",
+  "main": "libs/index.js",
+  "types": "libs/index.d.ts",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "DavidJones",
+    "email": "qowera@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "DavidJones",
+      "email": "qowera@gmail.com"
+    }
+  ],
+  "scripts": {
+    "clear": "rimraf ./libs",
+    "compile": "concurrently -c auto -P \"yarn:compile:* {1}\" --",
+    "compile:tsc": "tsc --project ./tsconfig.compile.json",
+    "dev": "yarn compile --watch"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "number-precision": "1.5.2",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "type-fest": "^4.3.1"
+  },
+  "peerDependencies": {
+    "type-fest": "^4.3.1"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@dumlj/cdn-adapter",
+  "version": "0.0.1",
+  "description": "静态资源CDN适配器",
+  "main": "libs/index.js",
+  "types": "libs/index.d.ts",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "huangjianyong <sexy.is.353016313@gmail.com>",
+  "maintainers": [
+    {
+      "name": "huangjianyong",
+      "email": "sexy.is.353016313@gmail.com"
+    }
+  ],
+  "scripts": {
+    "clear": "rimraf ./libs",
+    "compile": "concurrently -c auto -P \"yarn:compile:* {1}\" --",
+    "compile:tsc": "tsc --project ./tsconfig.compile.json",
+    "dev": "yarn compile --watch"
+  },
+  "dependencies": {
+    "@dumlj/mock-server-lib": "0.0.1",
+    "ahooks": "^3.7.8",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/lodash": "^4.14.192",
+    "@types/react": "^16.9.56",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
+    "typescript-transform-paths": "^3.4.6"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  }
+}
