@@ -1,5 +1,5 @@
-import { setupServer } from 'msw/lib/node'
 import { rest } from 'msw'
+import type { setupServer } from 'msw/lib/node'
 const config = {
   s3: {
     errorBucket: ['no-s3', 'no-data', 'no-origin'],

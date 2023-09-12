@@ -51,7 +51,6 @@
         "lerna": "^7.1.5",
         "lint-staged": "^14.0.1",
         "prettier": "^2.8.3",
-        "puppeteer": "^14.2.0",
         "rimraf": "^3.0.2",
         "shx": "^0.3.4",
         "ts-jest": "^28.0.3",
